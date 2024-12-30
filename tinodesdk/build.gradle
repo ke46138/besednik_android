@@ -30,6 +30,9 @@ android {
             jniLibs.srcDirs = ['src/main/libs']
         }
     }
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {
