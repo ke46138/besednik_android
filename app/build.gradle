@@ -39,10 +39,10 @@ android {
 
     buildTypes {
         debug {
-            resValue "string", "default_host_name", '"sandbox.tinode.co"'
+            resValue "string", "default_host_name", '"ke46138.duckdns.org:6060"'
         }
         release {
-            resValue "string", "default_host_name", '"api.tinode.co"'
+            resValue "string", "default_host_name", '"ke46138.duckdns.org:6060"'
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
