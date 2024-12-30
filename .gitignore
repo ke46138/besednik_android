@@ -44,3 +44,6 @@ tinodesdk/*.iml
 
 # Config file for Google services with secret keys
 app/google-services.json
+
+# Файл с паролями для подписи приложений
+app/store_file
