@@ -30,7 +30,7 @@ import co.tinode.tinodesdk.model.ServerMessage;
 public class Cache {
     private static final String TAG = "Cache";
 
-    private static final String API_KEY = "AQEAAAABAAD_rAp4DJh05a1HAwFT3A6K";
+    private static final String API_KEY = "AQAAAAABAAAcG7KB6gvDiQK5xqSnxf1p";
 
     private static final Cache sInstance = new Cache();
 
@@ -44,7 +44,7 @@ public class Cache {
 
     public static synchronized Tinode getTinode() {
         if (sInstance.mTinode == null) {
-            sInstance.mTinode = new Tinode("Tindroid/" + TindroidApp.getAppVersion(), API_KEY,
+            sInstance.mTinode = new Tinode("Besednik_Tindroid/" + TindroidApp.getAppVersion(), API_KEY,
                     BaseDb.getInstance().getStore(), null);
             sInstance.mTinode.setOsString(Build.VERSION.RELEASE);
 
