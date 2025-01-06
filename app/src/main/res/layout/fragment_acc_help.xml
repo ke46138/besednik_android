@@ -64,6 +64,20 @@
         app:drawableTint="@color/colorAccent" />
 
     <TextView
+        android:id="@+id/customLicenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="10dp"
+        android:text="@string/customLicenses"
+        android:textAppearance="?android:textAppearanceLarge"
+        app:drawableStartCompat="@drawable/ic_license"
+        app:drawableTint="@color/colorAccent"
+        tools:text="Licences" />
+
+    <TextView
         android:id="@+id/aboutTheApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
