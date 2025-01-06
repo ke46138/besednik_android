@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/message_view_bkg"
-    tools:context=".MessagesFragment">
+    tools:context="ru.ke46138.besednik.MessagesFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresher"
@@ -127,7 +127,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/audioRecorder" />
 
-    <co.tinode.tindroid.widgets.MovableActionButton
+    <ru.ke46138.besednik.widgets.MovableActionButton
         android:id="@+id/audioRecorder"
         android:layout_width="@dimen/fab_large"
         android:layout_height="@dimen/fab_large"

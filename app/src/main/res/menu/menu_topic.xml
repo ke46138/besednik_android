@@ -23,6 +23,13 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/action_send_report"
+        android:orderInCategory="102"
+        android:title="@string/action_send_report"
+        app:iconTint="?android:textColorPrimary"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_audio_call"
         android:orderInCategory="102"
         android:title="@string/action_call"

@@ -4,7 +4,7 @@
     android:layout_margin="@dimen/activity_default_margin"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".SignUpFragment">
+    tools:context="ru.ke46138.besednik.SignUpFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -132,7 +132,7 @@
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <co.tinode.tindroid.widgets.PhoneEdit
+            <ru.ke46138.besednik.widgets.PhoneEdit
                 android:id="@+id/phone"
                 android:visibility="gone"
                 android:layout_width="match_parent"

@@ -341,4 +341,14 @@
     <string name="configure_connection">Настроить подключение</string>
     <string name="calling_not_supported">Звонки не поддерживаются</string>
     <string name="display_code">Показать QR-код</string>
+    <string name="tinode">Беседник</string>
+    <string name="basedOnTinode">Основан на Tinode</string>
+    <string name="app_name">Беседник</string>
+    <string name="app_name_full">Беседник</string>
+    <string name="customLicenses">Лицензии (другое)</string>
+    <string name="typing">Печатает</string>
+    <string name="action_send_report">Пожаловаться</string>
+    <string name="report_text">Жалоба</string>
+    <string name="enter_report_text">Введите подробную информацию о проблеме</string>
+    <string name="report_sent">Жалоба отправлена</string>
 </resources>

@@ -45,6 +45,17 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/sendTest"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            app:srcCompat="@drawable/emoji_icon"
+            app:tint="?attr/colorAccent"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/attachImage"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -68,17 +79,25 @@
             app:srcCompat="@drawable/ic_attach"
             app:tint="?attr/colorAccent" />
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/editMessage"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editMessageWrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:layout_weight="1"
-            android:hint="@string/new_message_hint"
-            android:imeOptions="actionSend"
-            android:importantForAutofill="no"
-            android:inputType="textMultiLine|textCapSentences"
-            android:maxLines="3"
-            android:textColor="?android:textColorPrimary" />
+            android:hint="@string/new_message_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSend"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLines="3"
+                android:textColor="?android:textColorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <FrameLayout
             android:layout_width="wrap_content"
@@ -125,4 +144,219 @@
                 app:tint="?attr/colorAccent" />
         </FrameLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emojiPanel"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ScrollView
+            android:id="@+id/emojiScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/emojiLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/javaEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/yandexEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/powershellEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/firefoxEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/githubEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/vscodeEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/playstoreEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/fingerprintEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/tsEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/windowsEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/jsEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/appleEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/pythonEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/css3Emoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/goEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/html5Emoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/androidEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/unityEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/wordEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/excelEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+                    <Button
+                        android:id="@+id/rpiEmoji"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
 </LinearLayout>

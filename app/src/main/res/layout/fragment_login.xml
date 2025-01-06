@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginFragment">
+    tools:context="ru.ke46138.besednik.LoginFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageLogo"
@@ -65,12 +65,13 @@
         style="?attr/buttonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in"
         android:layout_below="@+id/editPasswordWrapper"
-        android:textSize="@dimen/button_text"
-        android:textColor="@color/white"
-        android:enabled="true"
         android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="@dimen/button_text"
         app:backgroundTint="@color/button_background" />
 
     <Button
@@ -78,9 +79,10 @@
         style="?attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/forgot_password"
         android:layout_below="@+id/signIn"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorAccent" />
 
     <LinearLayout
         android:id="@+id/brandingSetup"
