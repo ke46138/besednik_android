@@ -1,9 +1,14 @@
-# Tindroid: Tinode Messaging Client for Android
+# Besednik: Tinode Messaging Client for Android
+
+[![PRs](https://img.shields.io/github/issues-pr-closed-raw/ke46138/besednik_android.svg?style=flat-square&colorB=006400&label=pull%20requests)](https://github.com/ke46138/besednik_android/pulls?q=is%3Apr+is%3Aclosed+label%3Aadd)
+[![Contributors](https://img.shields.io/github/contributors-anon/ke46138/besednik_android?color=006400&style=flat-square)](https://github.com/ke46138/besednik_android/graphs/contributors)
+[![Activity](https://img.shields.io/github/commit-activity/m/ke46138/besednik_android?color=006400&style=flat-square)](https://github.com/ke46138/besednik_android/pulse/monthly)
+
 
 Android instant messenger using [Tinode](https://github.com/tinode/chat/) backend. Beta-quality software.
-Debug APKs are available in [releases](https://github.com/tinode/tindroid/releases).
+Debug AAB are available in [releases](https://github.com/ke46138/besdnik_android/releases).
 
-<a href="https://play.google.com/store/apps/details?id=co.tinode.tindroidx"><img src="play-store.svg" height=36></a>
+AAB can be installed by [SAI](https://f-droid.org/en/packages/com.aefyr.sai.fdroid/)
 
 ## Installing and running
 
@@ -22,7 +27,7 @@ This is NOT a standalone app, this is just a frontend, a client. It requires a [
 * Consider buying paid support: https://tinode.co/support.html
 * If you are a software developer, send us your pull requests with bug fixes and new features.
 * If you use the app and discover bugs or missing features, let us know by filing bug reports and feature requests. Vote for existing feature requests you find most valuable.
-* If you speak a language other than English, [translate](https://github.com/tinode/chat/blob/devel/docs/translations.md#android) the apps into your language. You may also review and improve existing translations.
+* If you speak a language other than English and Russian, [translate](https://github.com/tinode/chat/blob/devel/docs/translations.md#android) the apps into your language. You may also review and improve existing translations.
 * If you are a UI/UX expert, help us polish the app UI.
 * Use it: install it for your colleagues or friends at work or at home. Please [contact us](https://tinode.co/contact) if you want to participate in [closed testing](https://support.google.com/googleplay/android-developer/answer/9845334?hl=en).
 
