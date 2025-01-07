@@ -6,9 +6,7 @@
 
 
 Android instant messenger using [Tinode](https://github.com/tinode/chat/) backend. Beta-quality software.
-Debug AAB are available in [releases](https://github.com/ke46138/besdnik_android/releases).
-
-AAB can be installed by [SAI](https://f-droid.org/en/packages/com.aefyr.sai.fdroid/)
+Debug AAB and APK are available in [releases](https://github.com/ke46138/besdnik_android/releases).
 
 ## Installing and running
 
